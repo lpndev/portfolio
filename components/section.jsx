@@ -3,10 +3,14 @@ import { cn } from '@/lib/utils'
 function Section({ className, children, as, ...props }) {
   const Section = as || 'section'
 
-  const baseClasses = 'relative w-full px-4 flex flex-col  items-center'
-
   return (
-    <Section className={cn(baseClasses, className)} {...props}>
+    <Section
+      className={cn(
+        'relative flex w-full flex-col items-center px-4',
+        className
+      )}
+      {...props}
+    >
       {children}
     </Section>
   )

@@ -1,11 +1,13 @@
-import ProjectCard from '@/app/components/ui/project-card'
-import Working from '@/app/components/ui/working'
-import Container from '@/components/layout/container'
-import Section from '@/components/layout/section'
-import { Button } from '@/components/ui/button'
-import { githubUser, projects } from '@/lib/data'
-import Link from 'next/link'
 import { Suspense } from 'react'
+import Link from 'next/link'
+
+import { githubUser, projects } from '@/lib/data'
+
+import { Button } from '@/components/ui/button'
+import ProjectCard from '@/components/ui/project-card'
+import Working from '@/components/ui/working'
+import Container from '@/components/container'
+import Section from '@/components/section'
 
 function Projects() {
   return (

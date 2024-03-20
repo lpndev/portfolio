@@ -1,8 +1,10 @@
-import Container from '@/components/layout/container'
-import Section from '@/components/layout/section'
-import { Button } from '@/components/ui/button'
-import { socials } from '@/lib/data'
 import Link from 'next/link'
+
+import { socials } from '@/lib/data'
+
+import { Button } from '@/components/ui/button'
+import Container from '@/components/container'
+import Section from '@/components/section'
 
 function About() {
   return (

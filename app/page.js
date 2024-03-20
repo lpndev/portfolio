@@ -1,7 +1,7 @@
-import About from '@/app/components/layout/about'
-import Contact from '@/app/components/layout/contact'
-import CallToAction from '@/app/components/layout/cta'
-import Projects from '@/app/components/layout/projects'
+import About from '@/components/about'
+import Contact from '@/components/contact'
+import CallToAction from '@/components/cta'
+import Projects from '@/components/projects'
 
 export default function Home() {
   return (

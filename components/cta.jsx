@@ -1,9 +1,11 @@
-import Container from '@/components/layout/container'
-import Section from '@/components/layout/section'
-import { Badge } from '@/components/ui/badge'
-import { upworkUser } from '@/lib/data'
 import Image from 'next/image'
 import Link from 'next/link'
+
+import { upworkUser } from '@/lib/data'
+
+import { Badge } from '@/components/ui/badge'
+import Container from '@/components/container'
+import Section from '@/components/section'
 
 function CallToAction() {
   return (

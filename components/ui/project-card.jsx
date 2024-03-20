@@ -1,7 +1,9 @@
-import { Badge } from '@/components/ui/badge'
-import { cn } from '@/lib/utils'
 import Image from 'next/image'
 import Link from 'next/link'
+
+import { cn } from '@/lib/utils'
+
+import { Badge } from '@/components/ui/badge'
 
 function ProjectCard({
   className,
@@ -12,14 +14,14 @@ function ProjectCard({
   body,
   ...props
 }) {
-  const baseClasses =
-    'group relative flex min-h-[180px] flex-col gap-2 overflow-hidden rounded-lg border border-zinc-800/80 bg-zinc-900/40 p-6 transition hover:brightness-90'
-
   return (
     <Link
       href={href}
       target='_blank'
-      className={cn(baseClasses, className)}
+      className={cn(
+        'group relative flex min-h-[180px] flex-col gap-2 overflow-hidden rounded-lg border border-zinc-800/80 bg-zinc-900/40 p-6 transition hover:brightness-90',
+        className
+      )}
       {...props}
     >
       <div className='flex flex-col gap-4 sm:max-w-[50%]'>

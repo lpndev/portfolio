@@ -1,10 +1,12 @@
-import ContactCard from '@/app/components/ui/contact-card'
-import ContactForm from '@/app/components/ui/contact-form'
-import Container from '@/components/layout/container'
-import Section from '@/components/layout/section'
-import { Separator } from '@/components/ui/separator'
-import { contact } from '@/lib/data'
 import { Suspense } from 'react'
+
+import { contact } from '@/lib/data'
+
+import ContactCard from '@/components/ui/contact-card'
+import ContactForm from '@/components/ui/contact-form'
+import { Separator } from '@/components/ui/separator'
+import Container from '@/components/container'
+import Section from '@/components/section'
 
 function Contact() {
   return (
