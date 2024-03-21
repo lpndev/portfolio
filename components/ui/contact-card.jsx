@@ -7,7 +7,7 @@ function ContactCard({ className, href, icon, title, body, ...props }) {
     <Link
       href={href}
       className={cn(
-        'relative inline-flex w-full items-center gap-2 whitespace-nowrap rounded-lg border border-zinc-800/80 bg-zinc-900/40 p-4 text-sm transition hover:brightness-90',
+        'relative inline-flex w-full items-center gap-2 whitespace-nowrap rounded-lg border border-zinc-800/80 bg-zinc-900/20 p-4 text-sm transition hover:brightness-90',
         className
       )}
       {...props}

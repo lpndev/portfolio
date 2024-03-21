@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-import { upworkUser } from '@/lib/data'
+import { platforms, upworkUser } from '@/lib/data'
 
 import { Badge } from '@/components/ui/badge'
 import Container from '@/components/container'
@@ -17,28 +17,23 @@ function CallToAction() {
             Lets work together
           </h3>
         </div>
-        <div className='flex w-full flex-col items-center gap-2'>
-          <Link
-            href={`https://www.upwork.com/freelancers/${upworkUser}`}
-            target='_blank'
-            className='group relative inline-flex w-full gap-4 rounded-lg border border-zinc-200 bg-zinc-200/40 p-4 transition hover:brightness-[103%]'
-          >
-            <div>
+        <div className='flex w-full flex-col gap-2 sm:w-fit sm:flex-row'>
+          {platforms.map((platform, i) => (
+            <Link
+              key={i}
+              href={platform.hash}
+              target='_blank'
+              className='inline-flex w-full items-center gap-2 rounded-lg border border-zinc-200 bg-zinc-200/20 p-4 transition hover:brightness-[103%] sm:w-fit'
+            >
               <Image
-                src='/images/pfp.png'
-                className='h-14 w-14 max-w-14 rounded-full object-center'
-                width={60}
-                height={60}
-                alt='Image'
+                src={platform.icon}
+                width={32}
+                height={32}
+                alt='Platform Logo'
               />
-            </div>
-            <div className='space-y-2'>
-              <Badge>Upwork</Badge>
-              <h4 className='text-lg font-medium leading-normal'>
-                Leonardo Diniz
-              </h4>
-            </div>
-          </Link>
+              <p className='font-medium'>{platform.title}</p>
+            </Link>
+          ))}
         </div>
       </Container>
     </Section>

@@ -1,1 +1,1 @@
-My personal portfolio.
+![Repo Image](/public/images/github-image.png)
