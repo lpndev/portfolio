@@ -1,1 +1,1 @@
-![Repo Image](/public/images/github-image.png)
+![Repo Image](/public/images/featured-image.png)
