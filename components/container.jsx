@@ -1,10 +1,12 @@
 import { cn } from '@/lib/utils'
 
-function Container({ className, children, ...props }) {
+function Container({ as, className, children, ...props }) {
+  const Container = as || 'div'
+
   return (
     <div
       className={cn(
-        'flex w-full max-w-screen-md flex-col items-center',
+        'flex w-full max-w-screen-md flex-col items-center justify-center',
         className
       )}
       {...props}

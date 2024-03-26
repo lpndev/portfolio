@@ -6,7 +6,7 @@ function Section({ className, children, as, ...props }) {
   return (
     <Section
       className={cn(
-        'relative flex w-full flex-col items-center px-4',
+        'relative flex w-full flex-col items-center justify-center px-5',
         className
       )}
       {...props}
