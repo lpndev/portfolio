@@ -4,7 +4,7 @@ function Container({ as, className, children, ...props }) {
   const Container = as || 'div'
 
   return (
-    <div
+    <Container
       className={cn(
         'flex w-full max-w-screen-md flex-col items-center justify-center',
         className
@@ -12,7 +12,7 @@ function Container({ as, className, children, ...props }) {
       {...props}
     >
       {children}
-    </div>
+    </Container>
   )
 }
 

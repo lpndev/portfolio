@@ -19,7 +19,7 @@ function ProjectCard({
       href={href}
       target='_blank'
       className={cn(
-        'group relative flex min-h-[180px] flex-col gap-2 overflow-hidden rounded-lg border border-zinc-800/80 bg-zinc-900/40 p-6 transition hover:brightness-90',
+        'border-foreground-800/80 bg-foreground-900/40 group relative flex min-h-[180px] flex-col gap-2 overflow-hidden rounded-lg border p-6 transition hover:brightness-90',
         className
       )}
       {...props}
@@ -33,14 +33,14 @@ function ProjectCard({
           ))}
         </div>
         <h2 className='text-lg font-medium leading-normal'>{title}</h2>
-        <p className='text-sm leading-normal text-zinc-400'>{body}</p>
+        <p className='text-sm leading-normal opacity-75'>{body}</p>
       </div>
       <Image
         src={image}
         width={400}
         height={200}
         alt='Card Image'
-        className='-right-24 top-8 block rounded-lg border border-zinc-700/80 transition duration-300 md:absolute md:group-hover:-rotate-1 md:group-hover:scale-[1.02]'
+        className='border-foreground-700/80 -right-24 top-8 block rounded-lg border transition duration-300 md:absolute md:group-hover:-rotate-1 md:group-hover:scale-[1.02]'
         {...props}
       />
     </Link>

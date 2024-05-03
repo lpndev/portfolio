@@ -4,6 +4,7 @@ import { socials } from '@/lib/data'
 
 import { Button } from '@/components/ui/button'
 import Container from '@/components/container'
+import { ModeToggle } from '@/components/mode-toggle'
 import Section from '@/components/section'
 
 function About() {
@@ -20,6 +21,7 @@ function About() {
           </h1>
         </div>
         <div className='inline-flex items-center gap-2'>
+          <ModeToggle />
           {socials.map((social, i) => (
             <Button
               key={i}

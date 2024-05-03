@@ -2,9 +2,9 @@ import { Suspense } from 'react'
 
 import { contact } from '@/lib/data'
 
-import ContactCard from '@/components/ui/contact-card'
-import ContactForm from '@/components/ui/contact-form'
 import { Separator } from '@/components/ui/separator'
+import ContactCard from '@/components/contact-card'
+import ContactForm from '@/components/contact-form'
 import Container from '@/components/container'
 import Section from '@/components/section'
 

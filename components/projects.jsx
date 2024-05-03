@@ -4,10 +4,10 @@ import Link from 'next/link'
 import { githubUser, projects } from '@/lib/data'
 
 import { Button } from '@/components/ui/button'
-import ProjectCard from '@/components/ui/project-card'
-import Working from '@/components/ui/working'
 import Container from '@/components/container'
+import ProjectCard from '@/components/project-card'
 import Section from '@/components/section'
+import Working from '@/components/working'
 
 function Projects() {
   return (

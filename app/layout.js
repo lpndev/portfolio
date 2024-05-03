@@ -1,12 +1,16 @@
-import { Inter } from 'next/font/google'
+import { DM_Sans as FontSans } from 'next/font/google'
 
 import { Toaster } from '@/components/ui/sonner'
+import { ThemeProvider } from '@/components/theme-provider'
 
-import './globals.css'
+import '@/styles/globals.css'
 
 import { Analytics } from '@vercel/analytics/react'
 
-const inter = Inter({ subsets: ['latin'] })
+const fontSans = FontSans({
+  subsets: ['latin'],
+  variable: '--font-sans',
+})
 
 export const metadata = {
   title: 'Leonardo Diniz',
@@ -15,9 +19,16 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang='en'>
-      <body className={inter.className}>
-        {children}
+    <html lang='en' suppressHydrationWarning>
+      <body className={fontSans.variable}>
+        <ThemeProvider
+          attribute='class'
+          defaultTheme='system'
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
         <Toaster richColors />
         <Analytics />
       </body>
