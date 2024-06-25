@@ -1,6 +1,8 @@
 import { Suspense } from 'react'
 import Link from 'next/link'
 
+import { MoveUpRight } from 'lucide-react'
+
 import { githubUser, projects } from '@/lib/data'
 
 import { Button } from '@/components/ui/button'
@@ -39,10 +41,12 @@ function Projects() {
           <div>
             <Button variant='link' asChild>
               <Link
+                className='hover: inline-flex items-center gap-2'
                 href={`https://github.com/${githubUser}?tab=repositories`}
                 target='_blank'
               >
-                See more projects ↗
+                See more projects
+                <MoveUpRight size={16} />
               </Link>
             </Button>
           </div>
